@@ -1,0 +1,30 @@
+{
+    "name": "my-block",
+    "version": "1.0.0",
+    "description": "Create a block.",
+    "author": "Clorith",
+    "license": "GPL-2.0-or-later",
+    "keywords": [
+        "wordpress",
+        "plugin"
+    ],
+    "homepage": "https://www.clorith.net",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/clorith/wordpress-block-scaffold"
+    },
+    "bugs": "https://github.com/clorith/wordpress-block-scaffold/issues",
+    "engines": {
+        "node": ">=10.16.0"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^4.1.0",
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "lint:css": "wp-scripts lint-style './src/styles/**/*.css'",
+        "lint:js": "wp-scripts lint-js ./src/javascript/**/*.js",
+        "start": "wp-scripts start"
+    },
+	
+}
